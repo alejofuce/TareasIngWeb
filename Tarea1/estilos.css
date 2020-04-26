@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: whitesmoke;
+}
+
+header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrincipal, main.seccionPrincipal, aside.sposor, footer.piePagina{
+	background-color: #242F40;
+	color:  #CCA43B;
+	width: 90%;
+	margin: 0 auto;
+}
+
+header.cabeceraPrincipal h1{
+	padding: 1em;
+	width: 20%;
+	display: inline-block;
+}
+
+section.seccionCabecera {
+	width: 70%;
+	display: inline-block;
+	text-align: right;
+}
+
+nav.menuPrincipal{
+	margin-top: 2px;
+	text-align: center;
+}
+
+nav.menuPrincipal div{
+		
+}
+
+section.galeriaPrincipal{
+	margin-top:  2px;
+	height: 700px;
+	text-align: center;
+}
+
+main.seccionPrincipal{
+	margin-top: 2px;
+	text-align: center;
+}
+
+section.noticias{
+	margin-top: 2px;
+	display: inline-block;
+	text-align: center;
+	height: 200px;
+}
+
+aside.sposor{
+	margin-top: 2px;
+	text-align: center;
+	height: 50px;
+}
+
+footer.piePagina{
+	margin-top: 2px;
+	text-align: center;
+	height: auto;
+}
