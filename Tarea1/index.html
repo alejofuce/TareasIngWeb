@@ -1,61 +1,45 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Alejandro Fuertes</title>
-		<link rel="stylesheet" href="##">
-	</head>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Clase2 Maquetación en HTML y CSS</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header class="cabeceraPrincipal">
+		<h1>LOGOTIPO</h1>
+		<section class="seccionCabecera">
+			<nav class="menuSecundario">
+				MENU SECUNDARIO
+			</nav>
+			<aside class="buscador">
+				BUSCADOR
+			</aside>
+		</section>
+	</header>
+	<nav class="menuPrincipal">
+		MENU PRINCIPAL
+	</nav>
+	<section class="galeriaPrincipal">
+		<h2>
+			GALERIA
+		</h2>
+	</section>
 	
-	<style>
-		.centrar {
-			text-align: center;
-		}
-		
-		.caja { float:left;margin-left:17%; }
-		
-	</style>
-	
-	<body>
-		
-		<header>
-        	<div style="float: left">LOGO
-			</div>
-
-        	<div style="float: right">
-            	<a href="#">REGISTER &nbsp;</a>
-            	<a href="#">LOGIN</a><br>
-            	<input id="search" type="tex" placeholder="Buscar"><br>
-        	</div>
-    	</header><br><br><br>
-		
-		<nav class="centrar">
-			<a href="#">INICIO</a>
-			<a href="#">SERVICIOS</a>
-			<a href="#">PORTAFOLIO</a>
-			<a href="#">CLIENTES</a>
-			<a href="#">CONTACTOS</a>
-		</nav><br>
-
-		<div class="centrar">
-			SLIDER GALERIA
-		</div><br>
-
-		<div class="news">
-			<article style="float: left" class="centrar">NOTICIA 1</article>
-			<article style="float: right" class="centrar">NOTICIA 2</article><br>
-		</div><br>
-
-		<div class="centrar">
-			<div class="caja">1</div>
-			<div class="caja">2</div>
-			<div class="caja">3</div>
-			<div class="caja">4</div>
-			<div class="caja">5</div>
-		</div><br><br>
-			
-		<footer class="centrar">
-			PIE DE PAGINA
-		</footer>
-	</body>
+	<main class="seccionPrincipal">
+		<section class="noticias">
+			NOTICIA 1
+		</section>
+		<section class="noticias">
+			NOTICIA 2
+		</section>
+	</main>
+	<aside class="sposor">
+		SPONSOR
+	</aside>
+	<footer class="piePagina">
+		<h5>Todos los derechos reervados UTPL 2020</h5>
+	</footer>
+</body>
 </html>
