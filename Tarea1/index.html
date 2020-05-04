@@ -1,45 +1,240 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Clase2 Maquetación en HTML y CSS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<title>Clase2 Maquetación en HTML y CSS</title>
 	<link rel="stylesheet" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100&display=swap" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script> 
+		$(document).ready(function(){
+		  $(".mostrarGaleria").click(function(){
+			$(".galeriaPrincipal").slideDown("slow");
+		  });
+		});
+		$(document).ready(function(){
+			$(".ocultarGaleria").click(function(){
+			$(".galeriaPrincipal").slideUp("slow");
+		  });
+		});
+	</script>
 </head>
 
 <body>
 	<header class="cabeceraPrincipal">
-		<h1>LOGOTIPO</h1>
-		<section class="seccionCabecera">
-			<nav class="menuSecundario">
-				MENU SECUNDARIO
-			</nav>
-			<aside class="buscador">
-				BUSCADOR
-			</aside>
-		</section>
-	</header>
+        <div class="logo">
+            <p class="inicialeslogo">
+                IW
+            </p>
+            <h1>Ingeniería web</h1>
+        </div>
+        <section class="seccionCabecera">
+            <aside class="buscador">
+                <div class="barra-busqueda">
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </aside>
+        </section>
+    </header>
 	<nav class="menuPrincipal">
-		MENU PRINCIPAL
+		<a href=""><i class="fa fas-home"></i> Inicio</a>
+		<a href="">Acerca de</a>
+		<a href="">Articulos</a>
+		<a href="">Contactos</a>
+	</nav>
+	<nav class="mostrarGaleria">
+		<a>Mostrar Galeria</a>
 	</nav>
 	<section class="galeriaPrincipal">
-		<h2>
-			GALERIA
-		</h2>
+		<img src="images/Background.png" alt="Imagen 1 del slider principal">
 	</section>
-	
+	<nav class="ocultarGaleria">
+		<a>Ocultar Galeria</a>
+	</nav>
 	<main class="seccionPrincipal">
-		<section class="noticias">
-			NOTICIA 1
+		<section class="articulo">
+			<article class="noticias">
+				<div class="contenedor1">
+					<img src="images/Noticia3.jpg" alt="">
+				</div>
+				<div class="contenedorTexto">
+					<div>
+						<h2 class="titulo">
+							Noticias de desarrollo Web, metologias
+						</h2>
+						<p class="fecha">
+							Abril 24, 2020
+						</p>
+					</div>
+					<p class="extracto">
+						Informacion completa de la noticas en cenato al destoollo web, ec=xiste nuevas tenolodias web de desarrollo
+					</p>
+					<a href="" class="botonLink">
+						Ver mas
+					</a>
+				</div>
+			</article>
 		</section>
-		<section class="noticias">
-			NOTICIA 2
+		
+		<section class="articulo">
+			<article class="noticias">
+				<div class="contenedor1">
+					<img src="images/Noticia4.jpg" alt="">
+				</div>
+				<div class="contenedorTexto">
+					<div>
+						<h2 class="titulo">
+							Noticias de desarrollo Web, metologias
+						</h2>
+						<p class="fecha">
+							Abril 25, 2020
+						</p>
+					</div>
+					<p class="extracto">
+						Informacion completa de la noticas en cenato al destoollo web, ec=xiste nuevas tenolodias web de desarrollo
+					</p>
+					<a href="" class="botonLink">
+						Ver mas
+					</a>
+				</div>
+			</article>
 		</section>
+		
 	</main>
+	<nav class="menuPrincipal">
+		<a href="">Sponsors</a>
+	</nav>
 	<aside class="sposor">
-		SPONSOR
+		<section class="sponsorItem"><img src="images/nose.png" width="130" height="130" alt="" id="girar"><script>
+				//<![CDATA[
+				$('#girar').on("click", function(e) {
+				  e.preventDefault();
+				  $('#girar').addClass('giro');
+
+				  var t1 = setTimeout(function() {
+				  $('#girar').removeClass('giro');
+				  }, 1000);
+				});
+				  //]]>
+				</script>
+				<style>
+				#girar {
+				  position: relative;cursor:pointer;
+				  -webkit-transition: all 500ms ease-in-out;
+					-moz-transition: all 500ms ease-in-out;
+					-o-transition: all 500ms ease-in-out;
+					-ms-transition: all 500ms ease-in-out;
+				}
+
+				#girar.giro {
+					-webkit-transform: rotate(90deg);
+					   -moz-transform: rotate(90deg);
+						-ms-transform: rotate(90deg);
+						 -o-transform: rotate(90deg);
+							transform: rotate(90deg);
+					zoom: 1;
+				}
+			</style></section> 
+        <section class="sponsorItem"><img src="images/vimeo.png" width="130" height="130" alt="" id="girar2"><script>
+				//<![CDATA[
+				$('#girar2').on("click", function(e) {
+				  e.preventDefault();
+				  $('#girar2').addClass('giro');
+
+				  var t1 = setTimeout(function() {
+				  $('#girar2').removeClass('giro');
+				  }, 1000);
+				});
+				  //]]>
+				</script>
+				<style>
+				#girar2 {
+				  position: relative;cursor:pointer;
+				  -webkit-transition: all 500ms ease-in-out;
+					-moz-transition: all 500ms ease-in-out;
+					-o-transition: all 500ms ease-in-out;
+					-ms-transition: all 500ms ease-in-out;
+				}
+
+				#girar2.giro {
+					-webkit-transform: rotate(90deg);
+					   -moz-transform: rotate(90deg);
+						-ms-transform: rotate(90deg);
+						 -o-transform: rotate(90deg);
+							transform: rotate(90deg);
+					zoom: 1;
+				}
+			</style></section> 
+        <section class="sponsorItem"><img src="images/youtube.png" width="130" height="130" alt="" id="girar3"><script>
+				//<![CDATA[
+				$('#girar3').on("click", function(e) {
+				  e.preventDefault();
+				  $('#girar3').addClass('giro');
+
+				  var t1 = setTimeout(function() {
+				  $('#girar3').removeClass('giro');
+				  }, 1000);
+				});
+				  //]]>
+				</script>
+				<style>
+				#girar3 {
+				  position: relative;cursor:pointer;
+				  -webkit-transition: all 500ms ease-in-out;
+					-moz-transition: all 500ms ease-in-out;
+					-o-transition: all 500ms ease-in-out;
+					-ms-transition: all 500ms ease-in-out;
+				}
+
+				#girar3.giro {
+					-webkit-transform: rotate(90deg);
+					   -moz-transform: rotate(90deg);
+						-ms-transform: rotate(90deg);
+						 -o-transform: rotate(90deg);
+							transform: rotate(90deg);
+					zoom: 1;
+				}
+			</style></section> 
+        <section class="sponsorItem">
+			<img src="images/facebook.png" width="130" height="130" alt="" id="girar4"><script>
+				//<![CDATA[
+				$('#girar4').on("click", function(e) {
+				  e.preventDefault();
+				  $('#girar4').addClass('giro');
+
+				  var t1 = setTimeout(function() {
+				  $('#girar4').removeClass('giro');
+				  }, 1000);
+				});
+				  //]]>
+				</script>
+				<style>
+				#girar4 {
+				  position: relative;cursor:pointer;
+				  -webkit-transition: all 500ms ease-in-out;
+					-moz-transition: all 500ms ease-in-out;
+					-o-transition: all 500ms ease-in-out;
+					-ms-transition: all 500ms ease-in-out;
+				}
+
+				#girar4.giro {
+					-webkit-transform: rotate(90deg);
+					   -moz-transform: rotate(90deg);
+						-ms-transform: rotate(90deg);
+						 -o-transform: rotate(90deg);
+							transform: rotate(90deg);
+					zoom: 1;
+				}
+			</style>
+		</section> 
 	</aside>
 	<footer class="piePagina">
-		<h5>Todos los derechos reervados UTPL 2020</h5>
+		<h5>Todos los derechos reservados UTPL 2020</h5>
 	</footer>
 </body>
 </html>
